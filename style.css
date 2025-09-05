@@ -65,6 +65,9 @@ background-color: hsl(0,0%,55%) ;
 #del_btn{
     font-size: 2rem;
 }
+.otp{
+    font-size: 2rem;
+}
 @media (max-width: 500px) {
   #screen {
     font-size: 3rem;
