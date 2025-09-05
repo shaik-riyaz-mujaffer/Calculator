@@ -65,4 +65,19 @@ background-color: hsl(0,0%,55%) ;
 #del_btn{
     font-size: 2rem;
 }
+@media (max-width: 500px) {
+  #screen {
+    font-size: 1.2rem;
+    height: 50px;
+  }
+
+  button {
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+
+  header h1 {
+    font-size: 1.2rem;
+  }
+}
 
