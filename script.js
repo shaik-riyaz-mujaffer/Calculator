@@ -1,9 +1,19 @@
-let btns = document.querySelectorAll("button");
-let screen = document.querySelector("#screen");
-let operatorBtns = document.querySelectorAll(".operator_btn");
-for(button of btns){
-    button.addEventListener("onclick",addTodisplay)
+let screen = document.getElementById("screen");
+function add(val) {
+    screen.value += val;
 }
-function addTodisplay(){
-    button.innerText = screen.value;
+function clearDisplay() {
+    screen.value = " ";
+}
+function calculate() {
+    try {
+        let val = eval(screen.value);
+        screen.value = val;
+    }
+    catch(error){
+        screen.value = "Error";
+    }
+}
+function deleteLast() {
+  screen.value = screen.value.slice(0, -1);
 }
