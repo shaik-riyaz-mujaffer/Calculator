@@ -1,0 +1,24 @@
+#main1{
+    width: 100px;
+    
+}
+#main2{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 100px;
+    height: 300px;
+}
+button{
+    background-color: rgba(0, 0, 0, 0.745);
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+input{
+    width: 100vw;
+}
