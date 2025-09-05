@@ -17,3 +17,17 @@ function calculate() {
 function deleteLast() {
   screen.value = screen.value.slice(0, -1);
 }
+document.addEventListener('keydown', (event) => {
+  const key = event.key;
+
+  if ((key >= '0' && key <= '9') || ['+', '-', '*', '/', '.','(',')'].includes(key)) {
+    add(key);
+  } else if (key === 'Enter') {
+    event.preventDefault(); // prevent form submission if any
+    calculate();
+  } else if (key === 'Backspace') {
+    deleteLast();
+  } else if (key === 'Escape') {
+    clearDisplay();
+  }
+});
