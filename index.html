@@ -4,16 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PortFolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div id="layput">
-        
-    </div>
+    <header>
+        <h1>Calculator</h1>
+    </header>
+    <main>
+        <div id="Calculator">
+            <input readonly id="screen">
+            <div id="Keys">
+                <button class="operator_btn" onclick="add('+')">+</button>
+                <button onclick="add('7')">7</button>
+                <button onclick="add('8')">8</button>
+                <button onclick="add('9')">9</button>
+                <button onclick="add('-')">-</button>
+                <button onclick="add('4')">4</button>
+                <button onclick="add('5')">5</button>
+                <button onclick="add('6')">6</button>
+                <button onclick="add('*')" class="operator_btn">*</button>
+                <button onclick="add('1')">1</button>
+                <button onclick="add('2')">2</button>
+                <button onclick="add('3')">3</button>
+                <button class="operator_btn" onclick="add('/')" >/</button>
+                <button onclick="add('0')">0</button>
+                <button onclick="add('.')">.</button>
+                <button onclick="calculate('=')">=</button>
+                <button class="operator_btn" onclick="clearDisplay('C')">C</button>
+                <button class="operator_btn" onclick="deleteLast()" id="del_btn">DEL</button>
+            </div>
+        </div>
+    </main>
     <script src="script.js"></script>
 </body>
+
 </html>
